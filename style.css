@@ -1,0 +1,46 @@
+*{
+    font-family:"Times New Roman",Times,serif;
+    margin:0;
+    padding:0;
+    
+}
+nav{
+    list-style: none;
+    background-color: bisque;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin-right: 10px;
+    
+}
+
+section{
+    text-align: center;
+}
+ol{
+    font-size: medium;
+    list-style: square;
+    margin-left: 50px;
+}
+h3{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+table{
+   
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+footer{
+    text-align: center;
+    font-size: larger;
+    background-color:greenyellow;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    margin-top: 50px;
+ 
+
+}
