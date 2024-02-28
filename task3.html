@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Multi-Media Webpage</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  #canvas {
-    border: 1px solid black;
-    margin-right: 20px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas, SVG, Audio, and Video Website</title>
+    <style>
+      
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
+    <h1>Canvas, SVG, Audio, and Video Website</h1>
 
-<div id="container">
-  <!-- SVG Element -->
-  <svg width="200" height="200">
-    <circle cx="100" cy="100" r="80" fill="orange" />
-  </svg>
+ 
+    <canvas id="myCanvas" width="400" height="200"></canvas>
 
-  <!-- Canvas Element -->
-  <canvas id="canvas" width="200" height="200"></canvas>
-</div>
+ 
+    <svg width="400" height="200">
+        <rect x="50" y="50" width="300" height="100" fill="blue" />
+        <circle cx="200" cy="100" r="40" fill="red" />
+    </svg>
 
-<!-- Audio Element -->
-<audio controls style="display: block; margin: 20px auto;">
-  <source src="audio_file.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
-<!-- Video Element -->
-<video width="400" height="300" controls style="display: block; margin: 20px auto;">
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-<script>
-  
-  var canvas = document.getElementById('canvas');
-  var context = canvas.getContext('2d');
-  context.fillStyle = 'green';
-  context.fillRect(50, 50, 100, 100);
-</script>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
 
 </body>
 </html>
