@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Media Webpage</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #canvas {
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <!-- SVG Element -->
+  <svg width="200" height="200">
+    <circle cx="100" cy="100" r="80" fill="orange" />
+  </svg>
+
+  <!-- Canvas Element -->
+  <canvas id="canvas" width="200" height="200"></canvas>
+</div>
+
+<!-- Audio Element -->
+<audio controls style="display: block; margin: 20px auto;">
+  <source src="audio_file.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Video Element -->
+<video width="400" height="300" controls style="display: block; margin: 20px auto;">
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+  
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+  context.fillStyle = 'green';
+  context.fillRect(50, 50, 100, 100);
+</script>
+
+</body>
+</html>
